@@ -179,6 +179,10 @@
     flex-wrap: wrap;
 }
 
+.margin-left-100px {
+    margin-left: 100px;
+}
+
 .primary-button {
     background: var(--button-primary-bg);
     color: var(--button-primary-text);

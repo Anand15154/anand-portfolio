@@ -10,8 +10,8 @@ const Hero = () => {
         { icon: Mail, href: LINKS.mailto, label: 'Email' }
     ]
 
-    const frontendSkills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "HTML/CSS"]
-    const backendSkills = ["Node.js", "Python", "Express.js", "PostgreSQL", "MongoDB", "AWS"]
+    const frontendSkills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Shopify", "HTML/CSS"]
+    const backendSkills = ["Node.js", "Express.js", "Golang", "PostgreSQL", "MongoDB", "AWS"]
 
     // Bubble configuration
     const bubbles = Array.from({ length: 8 }, (_, i) => ({
@@ -309,7 +309,7 @@ const Hero = () => {
                     </motion.div>
 
                     <motion.div
-                        className="hero-buttons"
+                        className="hero-buttons margin-left-100px"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1.4, duration: 0.8 }}
@@ -318,7 +318,7 @@ const Hero = () => {
                             <Code size={20} />
                             View My Work
                         </a>
-                        <a href="/resume.pdf" className="secondary-button" download>
+                        <a href="/resume.pdf" className="primary-button" download>
                             <Download size={20} />
                             Download Resume
                         </a>
