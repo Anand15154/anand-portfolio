@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, ArrowUp, Twitter, Instagram } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import './Footer.css'
+import { LINKS } from '../links'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -74,7 +75,7 @@ const Footer = () => {
                     <h4>Connect</h4>
                     <div className="social-links">
                         <a
-                            href="https://github.com/Anand15154"
+                            href={LINKS.github}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visit GitHub profile"
@@ -84,7 +85,7 @@ const Footer = () => {
                             <span className="social-tooltip">GitHub</span>
                         </a>
                         <a
-                            href="https://linkedin.com/in/anand-tiwari-4286b4226"
+                            href={LINKS.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visit LinkedIn profile"
@@ -94,7 +95,7 @@ const Footer = () => {
                             <span className="social-tooltip">LinkedIn</span>
                         </a>
                         <a
-                            href="https://twitter.com/yourusername"
+                            href={LINKS.twitter}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visit Twitter profile"
@@ -104,7 +105,7 @@ const Footer = () => {
                             <span className="social-tooltip">Twitter</span>
                         </a>
                         <a
-                            href="https://instagram.com/yourusername"
+                            href={LINKS.instagram}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visit Instagram profile"
@@ -114,7 +115,7 @@ const Footer = () => {
                             <span className="social-tooltip">Instagram</span>
                         </a>
                         <a
-                            href="mailto:anand.tiwari@example.com"
+                            href={LINKS.mailto}
                             aria-label="Send email"
                             className="social-link"
                         >

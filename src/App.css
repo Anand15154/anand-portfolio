@@ -67,18 +67,6 @@ main {
     }
 }
 
-.section-title:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-    text-shadow: 0 4px 20px var(--shadow-medium);
-}
-
-.section-title:hover::before {
-    filter: blur(30px);
-    transition: filter 0.3s ease;
-    background: var(--bg-overlay);
-}
-
 .card {
     background: var(--bg-card);
     backdrop-filter: blur(10px);

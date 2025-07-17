@@ -4,6 +4,7 @@ import Opten from '../assets/Opten.png'
 import Royal from '../assets/Royal.png'
 import Scout from '../assets/Scout.png'
 import './Projects.css'
+import { LINKS } from '../links'
 
 const Projects = () => {
     const projects = [
@@ -12,7 +13,7 @@ const Projects = () => {
             description: 'A unified B2B platform designed for Indian businesses aiming to go net-zero, offering streamlined access to renewable energy financing, simplified energy procurement, and tailored clean energy solutions. Our platform helps organizations overcome funding barriers, navigate complex contracts, and manage their sustainability goals—all in one place.',
             technologies: ['React', 'TypeScript', 'FastAPI', 'MySQL', 'Docker', 'Azure', 'Google APIs'],
             image: Opten,
-            github: 'https://github.com/yourusername/open-project',
+            github: LINKS.github + '/open-project',
             live: 'http://3.0.57.2:5173/customer-portal/dashboard',
             category: 'B2B Platform'
         },
@@ -21,7 +22,7 @@ const Projects = () => {
             description: 'I developed a responsive and interactive website for the Royal Enfield Continental GT Cup 2025 using Adobe Experience Manager (AEM), integrated with core HTML, CSS, and JavaScript to deliver a rich user experience. The platform features AEM integration for content structuring and templating, custom frontend development with hand-coded interactive elements, fully responsive design with seamless cross-device navigation, registration and eligibility modules with user-friendly flows.',
             technologies: ['AEM', 'HTML', 'CSS', 'JavaScript', 'Adobe Analytics'],
             image: Royal,
-            github: 'https://github.com/yourusername/re-motor-sport',
+            github: LINKS.github + '/re-motor-sport',
             live: 'https://www.royalenfield.com/in/en/gt-cup-2025/',
             category: 'Sports & Entertainment'
         },
@@ -30,7 +31,7 @@ const Projects = () => {
             description: 'A comprehensive scouting and talent management platform for sports organizations. Features include player profiles, performance analytics, recruitment workflows, and team management tools.',
             technologies: ['React.js', 'TypeScript', 'Golang', 'MySQL', 'MongoDB', 'Docker', 'AWS'],
             image: Scout,
-            github: 'https://github.com/yourusername/scout',
+            github: LINKS.github + '/scout',
             live: 'https://scout-platform.vercel.app',
             category: 'B2C Platform'
         },
@@ -39,7 +40,7 @@ const Projects = () => {
             description: 'An intelligent chatbot powered by OpenAI API, featuring natural language processing and context-aware conversations.',
             technologies: ['React', 'OpenAI API', 'Node.js', 'Express', 'Socket.io'],
             image: '/project3.jpg',
-            github: 'https://github.com/yourusername/ai-chatbot',
+            github: LINKS.github + '/ai-chatbot',
             live: 'https://ai-chatbot.vercel.app',
             category: 'AI/ML'
         },
@@ -48,7 +49,7 @@ const Projects = () => {
             description: 'A modern, responsive portfolio website showcasing my skills, projects, and professional experience with smooth animations.',
             technologies: ['React', 'TypeScript', 'Framer Motion', 'CSS3', 'Vite'],
             image: '/project4.jpg',
-            github: 'https://github.com/yourusername/portfolio',
+            github: LINKS.github + '/portfolio',
             live: 'https://anand-tiwari.vercel.app',
             category: 'Frontend'
         },
@@ -57,7 +58,7 @@ const Projects = () => {
             description: 'A weather application with real-time data, interactive maps, and detailed forecasts for multiple locations.',
             technologies: ['React', 'OpenWeather API', 'Chart.js', 'Leaflet', 'CSS3'],
             image: '/project5.jpg',
-            github: 'https://github.com/yourusername/weather-dashboard',
+            github: LINKS.github + '/weather-dashboard',
             live: 'https://weather-dashboard.vercel.app',
             category: 'API Integration'
         },
