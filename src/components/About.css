@@ -20,7 +20,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    margin-bottom: 4rem;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto 4rem;
@@ -298,11 +297,31 @@
     .feature-title {
         font-size: 1.2rem;
     }
+
+    /* Disable hover animations on mobile for better performance */
+    .feature-card:hover {
+        transform: none;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-card:hover .feature-icon {
+        transform: none;
+    }
+
+    .stat-item:hover {
+        transform: none;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text p:hover {
+        transform: none;
+    }
 }
 
 @media (max-width: 480px) {
     .about-content {
         padding: 0 15px;
+        gap: 2rem;
     }
 
     .about-stats {
@@ -337,6 +356,16 @@
     .feature-title {
         font-size: 1.1rem;
     }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
 }
 
 /* Animation keyframes for enhanced effects */
@@ -368,6 +397,13 @@
     animation-delay: 3s;
 }
 
+/* Disable animations on mobile for better performance */
+@media (max-width: 768px) {
+    .feature-card {
+        animation: none;
+    }
+}
+
 /* Smooth scrolling for better UX */
 html {
     scroll-behavior: smooth;
@@ -382,4 +418,17 @@ html {
 .stat-item:focus-within {
     outline: 2px solid var(--accent-primary);
     outline-offset: 2px;
+}
+
+/* Touch-friendly interactions for mobile */
+@media (hover: none) and (pointer: coarse) {
+    .feature-card:active {
+        transform: scale(0.98);
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-item:active {
+        transform: scale(0.98);
+        background: rgba(255, 255, 255, 0.1);
+    }
 }
