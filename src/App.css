@@ -14,9 +14,10 @@ main {
     background-color: var(--bg-primary);
 }
 
-.section:nth-child(even) {
+/* Removed alternating background colors to eliminate horizontal borders */
+/* .section:nth-child(even) {
     background-color: var(--bg-secondary);
-}
+} */
 
 .section-title {
     font-size: 2.5rem;

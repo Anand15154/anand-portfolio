@@ -1,7 +1,6 @@
 .footer {
     background: var(--bg-tertiary);
     backdrop-filter: blur(10px);
-    border-top: 1px solid var(--border-color);
     padding: 3rem 0 1rem;
     position: relative;
 }
