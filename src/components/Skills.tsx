@@ -8,7 +8,16 @@ import {
     Globe,
     Server,
     Cpu,
-    Monitor
+    Monitor,
+    FileCode,
+    FileText,
+    Layers,
+    Box,
+    Package,
+    Terminal,
+    Settings,
+    Shield,
+    Activity
 } from 'lucide-react'
 import './Skills.css'
 
@@ -19,12 +28,12 @@ const Skills = () => {
             icon: Globe,
             color: '#3B82F6',
             skills: [
-                { name: 'React', level: 95, icon: Code },
-                { name: 'TypeScript', level: 90, icon: Code },
-                { name: 'JavaScript', level: 92, icon: Code },
-                { name: 'HTML/CSS', level: 88, icon: Code },
-                { name: 'Next.js', level: 85, icon: Code },
-                { name: 'Vue.js', level: 80, icon: Code }
+                { name: 'React', level: 95, icon: FileCode, color: '#61DAFB' },
+                { name: 'TypeScript', level: 90, icon: FileText, color: '#3178C6' },
+                { name: 'JavaScript', level: 92, icon: Code, color: '#F7DF1E' },
+                { name: 'HTML/CSS', level: 88, icon: Layers, color: '#E34F26' },
+                { name: 'Next.js', level: 85, icon: Box, color: '#000000' },
+                { name: 'Vue.js', level: 80, icon: Package, color: '#4FC08D' }
             ]
         },
         {
@@ -32,12 +41,12 @@ const Skills = () => {
             icon: Server,
             color: '#10B981',
             skills: [
-                { name: 'Node.js', level: 88, icon: Server },
-                { name: 'Express.js', level: 85, icon: Server },
-                { name: 'Golang', level: 75, icon: Cpu },
-                { name: 'PostgreSQL', level: 80, icon: Database },
-                { name: 'MongoDB', level: 78, icon: Database },
-                { name: 'REST APIs', level: 90, icon: Zap }
+                { name: 'Node.js', level: 88, icon: Terminal, color: '#339933' },
+                { name: 'Express.js', level: 85, icon: Server, color: '#000000' },
+                { name: 'Golang', level: 75, icon: Cpu, color: '#00ADD8' },
+                { name: 'PostgreSQL', level: 80, icon: Database, color: '#336791' },
+                { name: 'MongoDB', level: 78, icon: Database, color: '#47A248' },
+                { name: 'REST APIs', level: 90, icon: Zap, color: '#FF6B6B' }
             ]
         },
         {
@@ -45,12 +54,12 @@ const Skills = () => {
             icon: Cloud,
             color: '#F59E0B',
             skills: [
-                { name: 'Git', level: 85, icon: GitBranch },
-                { name: 'Docker', level: 75, icon: Cloud },
-                { name: 'AWS', level: 70, icon: Cloud },
-                { name: 'CI/CD', level: 72, icon: Zap },
-                { name: 'Linux', level: 80, icon: Monitor },
-                { name: 'Nginx', level: 65, icon: Server }
+                { name: 'Git', level: 85, icon: GitBranch, color: '#F05032' },
+                { name: 'Docker', level: 75, icon: Cloud, color: '#2496ED' },
+                { name: 'AWS', level: 70, icon: Cloud, color: '#FF9900' },
+                { name: 'CI/CD', level: 72, icon: Activity, color: '#FF6B6B' },
+                { name: 'Linux', level: 80, icon: Monitor, color: '#FCC624' },
+                { name: 'Nginx', level: 65, icon: Settings, color: '#009639' }
             ]
         }
     ]
@@ -122,8 +131,8 @@ const Skills = () => {
                                     >
                                         <div className="skill-header">
                                             <div className="skill-info">
-                                                <div className="skill-icon">
-                                                    <skill.icon size={16} />
+                                                <div className="skill-icon" style={{ color: skill.color }}>
+                                                    <skill.icon size={20} />
                                                 </div>
                                                 <span className="skill-name">{skill.name}</span>
                                             </div>
@@ -134,25 +143,25 @@ const Skills = () => {
                                                 >
                                                     {getSkillLevelText(skill.level)}
                                                 </span>
-                                                <span className="skill-percentage">{skill.level}%</span>
                                             </div>
                                         </div>
 
-                                        <div className="skill-bar">
-                                            <motion.div
-                                                className="skill-progress"
-                                                style={{
-                                                    background: `linear-gradient(90deg, ${category.color}, ${getSkillLevelColor(skill.level)})`
-                                                }}
-                                                initial={{ width: 0 }}
-                                                whileInView={{ width: `${skill.level}%` }}
-                                                transition={{
-                                                    duration: 1.2,
-                                                    delay: (categoryIndex * 0.15) + (skillIndex * 0.08) + 0.3,
-                                                    ease: "easeOut"
-                                                }}
-                                                viewport={{ once: true }}
-                                            />
+                                        <div className="skill-icons-grid">
+                                            {Array.from({ length: Math.floor(skill.level / 10) }, (_, i) => (
+                                                <motion.div
+                                                    key={i}
+                                                    className="skill-icon-dot"
+                                                    style={{ backgroundColor: skill.color }}
+                                                    initial={{ scale: 0, opacity: 0 }}
+                                                    whileInView={{ scale: 1, opacity: 1 }}
+                                                    transition={{
+                                                        duration: 0.3,
+                                                        delay: (categoryIndex * 0.15) + (skillIndex * 0.08) + (i * 0.05),
+                                                        ease: "easeOut"
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                />
+                                            ))}
                                         </div>
                                     </motion.div>
                                 ))}
