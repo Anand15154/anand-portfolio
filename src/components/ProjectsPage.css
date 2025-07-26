@@ -1,0 +1,6 @@
+/* Projects Page Styles */
+.projects-page {
+    min-height: 100vh;
+    background: var(--bg-primary);
+    padding-top: 80px;
+}

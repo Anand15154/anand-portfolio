@@ -2,19 +2,24 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Sun, Moon, Globe, ArrowRight } from 'lucide-react'
 import { useTheme } from '../contexts/ThemeContext'
+import { useNavigate, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
     const { theme, toggleTheme } = useTheme()
+    const navigate = useNavigate()
+    const location = useLocation()
 
     const navItems = [
-        { name: 'Home', href: '#home' },
-        { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Contact', href: '#contact' }
+        { name: 'Home', href: '/home' },
+        { name: 'Portfolio', href: '/' },
+        { name: 'About', href: '/about' },
+        { name: 'Skills', href: '/skills' },
+        { name: 'Projects', href: '/projects' },
+        { name: 'Blog', href: '/blog' },
+        { name: 'Contact', href: '/contact' }
     ]
 
     useEffect(() => {
@@ -28,10 +33,7 @@ const Header = () => {
     }, [])
 
     const scrollToSection = (href: string) => {
-        const element = document.querySelector(href)
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-        }
+        navigate(href)
         setIsMenuOpen(false)
     }
 
