@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, Github, Calendar, Users, Star, Eye, Code } from 'lucide-react'
+import { ExternalLink, Github, Calendar, Users, Star } from 'lucide-react'
 import { useState, useMemo } from 'react'
 import Opten from '../assets/Opten.png'
 import Royal from '../assets/Royal.png'
@@ -276,7 +276,7 @@ const Projects = () => {
                     key={activeFilter}
                 >
                     <AnimatePresence mode="wait">
-                        {filteredProjects.map((project, index) => (
+                        {filteredProjects.map((project) => (
                             <motion.div
                                 key={project.title}
                                 className={`project-card ${project.featured ? 'featured' : ''}`}
