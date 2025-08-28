@@ -9,17 +9,17 @@ import {
     Globe,
     Server,
     Cpu,
-
     Smartphone,
-
     Palette,
     Shield,
     Award,
     TrendingUp,
     Clock,
-    Star
+    Star,
+    ExternalLink
 } from 'lucide-react'
 import './Skills.css'
+import Certificate from './Certificate'
 
 interface Skill {
     name: string
@@ -281,11 +281,8 @@ const Skills = () => {
     }, [selectedCategory, sortBy])
 
     const totalSkills = skillCategories.reduce((acc, cat) => acc + cat.skills.length, 0)
-    const avgProficiency = Math.round(
-        skillCategories.flatMap(cat => cat.skills).reduce((acc, skill) => acc + skill.level, 0) /
-        skillCategories.flatMap(cat => cat.skills).length
-    )
-    const totalYears = skillCategories.flatMap(cat => cat.skills).reduce((acc, skill) => acc + skill.years, 0)
+    const avgProficiency = 100
+    const totalYears = 1
 
     return (
         <section id="skills" className="section skills">
@@ -407,22 +404,6 @@ const Skills = () => {
                                             <span>{skill.certifications.join(', ')}</span>
                                         </div>
                                     )}
-
-                                    <div className="skill-bar">
-                                        <motion.div
-                                            className="skill-progress"
-                                            style={{
-                                                background: `linear-gradient(90deg, ${skill.categoryColor}, ${getSkillLevelColor(skill.level)})`
-                                            }}
-                                            initial={{ width: 0 }}
-                                            animate={{ width: `${skill.level}%` }}
-                                            transition={{
-                                                duration: 1.2,
-                                                delay: index * 0.05 + 0.3,
-                                                ease: "easeOut"
-                                            }}
-                                        />
-                                    </div>
                                 </motion.div>
                             ))}
                         </motion.div>
@@ -492,6 +473,24 @@ const Skills = () => {
                                 ))
                             }
                         </div>
+                    </div>
+                </motion.div>
+
+                {/* Certificate Section */}
+                <motion.div
+                    className="certificate-section"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 1.0 }}
+                    viewport={{ once: true }}
+                >
+                    <div className="certificate-header">
+                        <h3>Certifications & Achievements</h3>
+                        <p>Professional certifications and recognition for my work</p>
+                    </div>
+
+                    <div className="certificate-container">
+                        <Certificate />
                     </div>
                 </motion.div>
             </motion.div>

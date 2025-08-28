@@ -265,43 +265,6 @@
     border-left: 3px solid var(--accent-color);
 }
 
-.skill-bar {
-    width: 100%;
-    height: 10px;
-    background: var(--bg-tertiary);
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-progress {
-    height: 100%;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-progress::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    animation: shimmer 2.5s infinite;
-}
-
-@keyframes shimmer {
-    0% {
-        left: -100%;
-    }
-
-    100% {
-        left: 100%;
-    }
-}
-
 /* Summary Section */
 .skills-summary {
     background: var(--bg-overlay);
@@ -433,6 +396,38 @@
     box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
 }
 
+/* Certificate Section */
+.certificate-section {
+    margin-top: 80px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.certificate-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.certificate-header h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.certificate-header p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    opacity: 0.9;
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
     .skills-grid {
@@ -525,6 +520,20 @@
         padding: 6px 12px;
         font-size: 0.8rem;
     }
+
+    /* Certificate Section Mobile */
+    .certificate-section {
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+
+    .certificate-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .certificate-header p {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -569,5 +578,19 @@
 
     .stat-number {
         font-size: 1.6rem;
+    }
+
+    /* Certificate Section Small Mobile */
+    .certificate-section {
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
+    .certificate-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .certificate-header p {
+        font-size: 0.9rem;
     }
 }
