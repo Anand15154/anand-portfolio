@@ -34,8 +34,8 @@ const Hero = () => {
                     left: '10%',
                     width: '100px',
                     height: '100px',
-                    background: 'var(--accent-primary)',
-                    opacity: 0.1,
+                    background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-secondary))',
+                    opacity: 0.15,
                     borderRadius: '50%',
                     zIndex: 1
                 }}
@@ -58,8 +58,8 @@ const Hero = () => {
                     right: '15%',
                     width: '150px',
                     height: '150px',
-                    background: 'var(--accent-secondary)',
-                    opacity: 0.1,
+                    background: 'linear-gradient(135deg, var(--accent-secondary), var(--accent-tertiary))',
+                    opacity: 0.15,
                     borderRadius: '50%',
                     zIndex: 1
                 }}
@@ -85,7 +85,11 @@ const Hero = () => {
                         bottom: '-50px',
                         width: `${bubble.size}px`,
                         height: `${bubble.size}px`,
-                        background: 'radial-gradient(circle at 30% 30%, var(--bubble-primary), var(--bubble-secondary))',
+                        background: bubble.id % 3 === 0
+                            ? 'radial-gradient(circle at 30% 30%, var(--bubble-primary), var(--bubble-secondary))'
+                            : bubble.id % 3 === 1
+                                ? 'radial-gradient(circle at 30% 30%, var(--bubble-secondary), var(--bubble-tertiary))'
+                                : 'radial-gradient(circle at 30% 30%, var(--bubble-tertiary), var(--bubble-primary))',
                         borderRadius: '50%',
                         border: '1px solid var(--bubble-border)',
                         zIndex: 2,
@@ -126,16 +130,16 @@ const Hero = () => {
                             display: 'inline-flex',
                             alignItems: 'center',
                             gap: '0.5rem',
-                            background: 'var(--social-bg)',
+                            background: 'var(--greeting-bg)',
                             padding: '0.5rem 1rem',
                             borderRadius: '25px',
                             marginBottom: '1rem',
                             backdropFilter: 'blur(10px)',
-                            border: '1px solid var(--social-border)'
+                            border: '1px solid var(--greeting-border)'
                         }}
                     >
                         <Sparkles size={16} color="var(--accent-primary)" />
-                        <span style={{ color: '#fff', fontSize: '0.9rem', fontWeight: 500 }}>
+                        <span style={{ color: 'var(--text-primary)', fontSize: '0.9rem', fontWeight: 500 }}>
                             Available for opportunities
                         </span>
                     </motion.div>
@@ -195,15 +199,15 @@ const Hero = () => {
                                     <motion.div
                                         key={skill}
                                         style={{
-                                            background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.1))',
+                                            background: 'var(--skill-frontend-bg)',
                                             padding: '0.4rem 0.8rem',
                                             borderRadius: '20px',
                                             fontSize: '0.8rem',
                                             color: 'var(--text-primary)',
-                                            border: '1px solid rgba(59, 130, 246, 0.3)',
+                                            border: '1px solid var(--skill-frontend-border)',
                                             backdropFilter: 'blur(10px)',
                                             fontWeight: 500,
-                                            boxShadow: '0 4px 15px rgba(59, 130, 246, 0.1)'
+                                            boxShadow: '0 4px 15px rgba(37, 99, 235, 0.15)'
                                         }}
                                         initial={{ opacity: 0, scale: 0.8, y: 20 }}
                                         animate={{
@@ -230,7 +234,7 @@ const Hero = () => {
                                         whileHover={{
                                             scale: 1.1,
                                             y: -5,
-                                            boxShadow: '0 8px 25px rgba(59, 130, 246, 0.2)'
+                                            boxShadow: '0 8px 25px rgba(37, 99, 235, 0.25)'
                                         }}
                                     >
                                         {skill}
@@ -263,15 +267,15 @@ const Hero = () => {
                                     <motion.div
                                         key={skill}
                                         style={{
-                                            background: 'linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(147, 51, 234, 0.1))',
+                                            background: 'var(--skill-backend-bg)',
                                             padding: '0.4rem 0.8rem',
                                             borderRadius: '20px',
                                             fontSize: '0.8rem',
                                             color: 'var(--text-primary)',
-                                            border: '1px solid rgba(147, 51, 234, 0.3)',
+                                            border: '1px solid var(--skill-backend-border)',
                                             backdropFilter: 'blur(10px)',
                                             fontWeight: 500,
-                                            boxShadow: '0 4px 15px rgba(147, 51, 234, 0.1)'
+                                            boxShadow: '0 4px 15px rgba(124, 58, 237, 0.15)'
                                         }}
                                         initial={{ opacity: 0, scale: 0.8, y: 20 }}
                                         animate={{
@@ -298,7 +302,7 @@ const Hero = () => {
                                         whileHover={{
                                             scale: 1.1,
                                             y: -5,
-                                            boxShadow: '0 8px 25px rgba(147, 51, 234, 0.2)'
+                                            boxShadow: '0 8px 25px rgba(124, 58, 237, 0.25)'
                                         }}
                                     >
                                         {skill}
