@@ -4,6 +4,8 @@ import { useState, useMemo } from 'react'
 import Opten from '../assets/Opten.png'
 import Royal from '../assets/Royal.png'
 import Scout from '../assets/Scout.png'
+import Hyue from '../assets/Hyue.png'
+import FlyingFlea from '../assets/ff-product.jpg'
 import './Projects.css'
 import { LINKS } from '../links'
 
@@ -11,6 +13,20 @@ const Projects = () => {
     const [activeFilter, setActiveFilter] = useState('All')
 
     const projects = [
+
+        {
+            title: 'Flying Flea',
+            description: 'Flying Flea is a platform that allows you to create and share your own AI agents. It is a platform that allows you to create and share your own AI agents.',
+            technologies: ['React', 'TypeScript', 'FastAPI', 'MySQL', 'Docker', 'Azure', 'Google APIs'],
+            image: FlyingFlea,
+            github: LINKS.github + '/flying-flea',
+            live: 'https://flying-flea.ai',
+            category: 'AI/ML',
+            featured: true,
+            year: '2024',
+            teamSize: '4',
+            rating: 4.9
+        },
         {
             title: 'Opten Power',
             description: 'A unified B2B platform designed for Indian businesses aiming to go net-zero, offering streamlined access to renewable energy financing, simplified energy procurement, and tailored clean energy solutions. Our platform helps organizations overcome funding barriers, navigate complex contracts, and manage their sustainability goals—all in one place.',
@@ -77,18 +93,19 @@ const Projects = () => {
             rating: 4.8
         },
         {
-            title: 'Weather Dashboard',
-            description: 'A weather application with real-time data, interactive maps, and detailed forecasts for multiple locations with advanced weather analytics.',
-            technologies: ['React', 'OpenWeather API', 'Chart.js', 'Leaflet', 'CSS3', 'Redux'],
-            image: '/project5.jpg',
-            github: LINKS.github + '/weather-dashboard',
-            live: 'https://weather-dashboard.vercel.app',
-            category: 'API Integration',
-            featured: false,
-            year: '2023',
-            teamSize: '2',
-            rating: 4.5
+            title: 'Hyu',
+            description: 'Hyu is a platform that allows you to create and share your own AI agents. It is a platform that allows you to create and share your own AI agents.',
+            technologies: ['React', 'TypeScript', 'FastAPI', 'MySQL', 'Docker', 'Azure', 'Google APIs'],
+            image: Hyue,
+            github: LINKS.github + '/hyu',
+            live: 'https://hyu.ai',
+            category: 'AI/ML',
+            featured: true,
+            year: '2024',
+            teamSize: '4',
+            rating: 4.9
         },
+
     ]
 
     const categories = ['All', ...new Set(projects.map(project => project.category))]
