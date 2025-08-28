@@ -16,7 +16,7 @@ import {
     TrendingUp,
     Clock,
     Star,
-    ExternalLink
+
 } from 'lucide-react'
 import './Skills.css'
 import Certificate from './Certificate'
