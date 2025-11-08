@@ -10,8 +10,8 @@ const Hero = () => {
         { icon: Mail, href: LINKS.mailto, label: 'Email' }
     ]
 
-    const frontendSkills = ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Shopify", "HTML/CSS"]
-    const backendSkills = ["Node.js", "Express.js", "Golang", "PostgreSQL", "MongoDB", "AWS"]
+    const frontendSkills = ["React", "AEM", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Redux", "Shopify", "HTML/CSS"]
+    const backendSkills = ["Node.js", "Express.js", "Core Java", "C++", "PostgreSQL", "MongoDB", "AWS"]
 
     // Bubble configuration
     const bubbles = Array.from({ length: 8 }, (_, i) => ({
