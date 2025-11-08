@@ -61,7 +61,7 @@ const Skills = () => {
                     level: 95,
                     icon: Code,
                     years: 1,
-                    description: 'Building scalable SPAs with hooks, context, and modern patterns',
+                    description: 'Expert in building scalable Single Page Applications (SPAs) and complex user interfaces using React. Proficient in React Hooks (useState, useEffect, useContext, useReducer, custom hooks), Context API for state management, React Router for navigation, and modern patterns like component composition, higher-order components, and render props. Experience with performance optimization techniques including React.memo, useMemo, useCallback, code splitting, and lazy loading. Skilled in managing component lifecycle, handling side effects, and implementing responsive, accessible web applications',
                     certifications: ['Meta React Certification'],
                     lastUsed: '2025'
                 },
@@ -70,7 +70,7 @@ const Skills = () => {
                     level: 85,
                     icon: Code,
                     years: 1,
-                    description: 'Full-stack React framework with SSR and SSG',
+                    description: 'Proficient in Next.js for building full-stack React applications with server-side rendering (SSR), static site generation (SSG), and incremental static regeneration (ISR). Experience with App Router and Pages Router, API routes, middleware, dynamic routing, image optimization, and built-in CSS support. Skilled in implementing authentication, data fetching strategies (getServerSideProps, getStaticProps, getStaticPaths), and optimizing performance with automatic code splitting, prefetching, and edge functions. Knowledgeable in deployment strategies on Vercel and other platforms',
                     lastUsed: '2025'
                 },
                 {
@@ -78,7 +78,7 @@ const Skills = () => {
                     level: 90,
                     icon: Code,
                     years: 1,
-                    description: 'Type-safe development with advanced generics and utility types',
+                    description: 'Proficient in TypeScript for building type-safe applications with strong typing, interfaces, and type inference. Skilled in advanced TypeScript features including generics, utility types (Partial, Pick, Omit, Record), conditional types, and mapped types. Experience with TypeScript configuration, strict mode, and integrating TypeScript with React, Node.js, and modern build tools. Knowledgeable in type definitions, declaration files, and maintaining type safety across large codebases',
                     lastUsed: '2025'
                 },
                 {
@@ -86,7 +86,7 @@ const Skills = () => {
                     level: 92,
                     icon: Code,
                     years: 1,
-                    description: 'ES6+, async programming, and modern JavaScript patterns',
+                    description: 'Expert in modern JavaScript (ES6+) including arrow functions, destructuring, spread/rest operators, template literals, and modules. Proficient in asynchronous programming with Promises, async/await, and handling async operations. Skilled in advanced JavaScript concepts like closures, hoisting, event loop, prototypal inheritance, and functional programming patterns. Experience with modern JavaScript features including optional chaining, nullish coalescing, and working with arrays, objects, and built-in methods',
                     lastUsed: '2025'
                 },
                 {
@@ -94,7 +94,7 @@ const Skills = () => {
                     level: 88,
                     icon: Code,
                     years: 1,
-                    description: 'Semantic HTML, CSS Grid, Flexbox, and responsive design',
+                    description: 'Proficient in writing semantic HTML5 markup with proper document structure, accessibility attributes, and SEO best practices. Expert in CSS including Flexbox and CSS Grid for complex layouts, CSS custom properties (variables), animations, transitions, and transforms. Skilled in responsive design using media queries, mobile-first approach, and creating adaptive layouts that work across all devices. Experience with modern CSS features like container queries, CSS modules, and preprocessors like Sass/SCSS',
                     lastUsed: '2025'
                 }
             ]
@@ -109,7 +109,7 @@ const Skills = () => {
                     level: 88,
                     icon: Server,
                     years: 1,
-                    description: 'Server-side JavaScript with Express and performance optimization',
+                    description: 'Proficient in Node.js for building scalable server-side applications and APIs. Skilled in working with the Node.js runtime, event-driven architecture, and non-blocking I/O operations. Experience with npm package management, file system operations, streams, buffers, and working with environment variables. Knowledgeable in performance optimization, error handling, debugging, and building RESTful APIs with Express.js integration',
                     lastUsed: '2025'
                 },
                 {
@@ -117,7 +117,7 @@ const Skills = () => {
                     level: 85,
                     icon: Server,
                     years: 1,
-                    description: 'Fast, unopinionated web framework for Node.js',
+                    description: 'Experienced in Express.js for building robust web applications and RESTful APIs. Skilled in middleware implementation, routing, request/response handling, and error handling. Proficient in integrating with databases, authentication middleware (JWT, sessions), file uploads, and working with various Express extensions. Knowledgeable in security best practices, CORS configuration, and deploying Express applications to production environments',
                     lastUsed: '2025'
                 },
                 {
@@ -125,7 +125,7 @@ const Skills = () => {
                     level: 80,
                     icon: Database,
                     years: 1,
-                    description: 'Advanced SQL, indexing, and database optimization',
+                    description: 'Proficient in PostgreSQL for designing and managing relational databases with complex queries, joins, and transactions. Skilled in database schema design, creating indexes for performance optimization, and writing efficient SQL queries. Experience with database migrations, stored procedures, triggers, and maintaining data integrity with constraints and foreign keys. Knowledgeable in query optimization, database normalization, and working with PostgreSQL extensions',
                     lastUsed: '2025'
                 },
                 {
@@ -133,7 +133,7 @@ const Skills = () => {
                     level: 78,
                     icon: Database,
                     years: 1,
-                    description: 'NoSQL database with aggregation pipelines and indexing',
+                    description: 'Experienced in MongoDB for building scalable NoSQL database solutions with flexible document-based data models. Skilled in writing complex queries, aggregation pipelines, and performing CRUD operations efficiently. Proficient in schema design, indexing strategies, and optimizing database performance. Knowledgeable in MongoDB Atlas cloud services, data modeling, and integrating MongoDB with Node.js applications using Mongoose ODM',
                     lastUsed: '2025'
                 },
                 {
@@ -141,7 +141,7 @@ const Skills = () => {
                     level: 90,
                     icon: Zap,
                     years: 1,
-                    description: 'Designing scalable RESTful APIs with proper documentation',
+                    description: 'Expert in designing and developing RESTful APIs following REST principles and best practices. Skilled in creating scalable API architectures with proper HTTP methods (GET, POST, PUT, DELETE, PATCH), status codes, and resource naming conventions. Proficient in API documentation using tools like Swagger/OpenAPI, implementing authentication and authorization, rate limiting, and error handling. Experience with API versioning, pagination, filtering, and building APIs that integrate seamlessly with frontend applications',
                     lastUsed: '2025'
                 }
             ]
@@ -156,7 +156,7 @@ const Skills = () => {
                     level: 82,
                     icon: Code,
                     years: 1,
-                    description: 'Cross-platform mobile development with native performance',
+                    description: 'Proficient in React Native for building cross-platform mobile applications for iOS and Android with a single codebase. Skilled in using React Native components, navigation libraries (React Navigation), state management, and accessing native device features. Experience with styling mobile applications, handling platform-specific code, and integrating third-party libraries. Knowledgeable in app deployment, performance optimization, and building responsive mobile user interfaces',
                     lastUsed: '2025'
                 },
             ]
@@ -172,7 +172,7 @@ const Skills = () => {
                     level: 85,
                     icon: GitBranch,
                     years: 1,
-                    description: 'Version control, branching strategies, and collaboration',
+                    description: 'Expert in Git version control for managing code repositories and collaborating with development teams. Skilled in Git workflows including feature branches, pull requests, merge strategies, and resolving conflicts. Proficient in advanced Git commands, rebasing, stashing, tagging, and maintaining clean commit history. Experience with GitHub, GitLab, and Bitbucket for code hosting, code reviews, and managing collaborative development workflows',
                     lastUsed: '2025'
                 },
                 {
@@ -180,7 +180,7 @@ const Skills = () => {
                     level: 75,
                     icon: Cloud,
                     years: 1,
-                    description: 'Containerization and microservices deployment',
+                    description: 'Experienced in Docker for containerizing applications and creating consistent development and production environments. Skilled in writing Dockerfiles, building Docker images, managing containers, and working with Docker Compose for multi-container applications. Proficient in container orchestration basics, volume management, and networking. Knowledgeable in best practices for optimizing Docker images and deploying containerized applications',
                     lastUsed: '2025'
                 },
                 {
@@ -188,7 +188,7 @@ const Skills = () => {
                     level: 70,
                     icon: Cloud,
                     years: 1,
-                    description: 'Cloud infrastructure and serverless architecture',
+                    description: 'Proficient in Amazon Web Services (AWS) for cloud infrastructure and deploying scalable applications. Skilled in core AWS services including EC2, S3, Lambda for serverless computing, and IAM for security management. Experience with AWS services for databases (RDS), content delivery (CloudFront), and monitoring (CloudWatch). Knowledgeable in AWS deployment strategies, serverless architecture patterns, and basic cloud infrastructure management',
                     lastUsed: '2025'
                 },
                 {
@@ -204,7 +204,7 @@ const Skills = () => {
                     level: 72,
                     icon: Zap,
                     years: 1,
-                    description: 'Automated deployment pipelines and DevOps practices',
+                    description: 'Experienced in Continuous Integration and Continuous Deployment (CI/CD) pipelines for automating software delivery processes. Skilled in setting up automated testing, building, and deployment workflows using tools like GitHub Actions, GitLab CI, or Jenkins. Proficient in configuring deployment pipelines, environment management, and ensuring code quality through automated checks. Knowledgeable in DevOps best practices for streamlining development workflows and reducing manual deployment errors',
                     lastUsed: '2025'
                 },
             ]
@@ -219,7 +219,7 @@ const Skills = () => {
                     level: 75,
                     icon: Palette,
                     years: 1,
-                    description: 'User-centered design principles and prototyping',
+                    description: 'Proficient in UI/UX design principles focusing on creating intuitive, user-centered interfaces that enhance user experience. Skilled in wireframing, prototyping, user research, and usability testing. Experience with design systems, color theory, typography, and creating accessible designs that follow WCAG guidelines. Knowledgeable in translating design concepts into functional web and mobile interfaces while maintaining design consistency',
                     lastUsed: '2025'
                 },
                 {
@@ -227,7 +227,7 @@ const Skills = () => {
                     level: 70,
                     icon: Palette,
                     years: 1,
-                    description: 'Collaborative design and prototyping tool',
+                    description: 'Skilled in Figma for collaborative design work, creating high-fidelity prototypes, and designing user interfaces. Proficient in using Figma features including components, auto-layout, design systems, and interactive prototyping. Experience with collaborative design workflows, sharing designs with stakeholders, and creating design specifications for developers. Knowledgeable in using Figma plugins and maintaining design consistency across projects',
                     lastUsed: '2025'
                 }
             ]
