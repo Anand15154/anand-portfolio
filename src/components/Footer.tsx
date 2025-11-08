@@ -101,11 +101,11 @@ const Footer = () => {
                     </p>
                     <div className="footer-stats">
                         <div className="stat">
-                            <span className="stat-number">3+</span>
+                            <span className="stat-number">1+</span>
                             <span className="stat-label">Years Experience</span>
                         </div>
                         <div className="stat">
-                            <span className="stat-number">50+</span>
+                            <span className="stat-number">10+</span>
                             <span className="stat-label">Projects Completed</span>
                         </div>
                     </div>
