@@ -8,7 +8,6 @@ import {
     Zap,
     Globe,
     Server,
-    Cpu,
     Smartphone,
     Palette,
     Shield,
@@ -39,7 +38,7 @@ interface SkillCategory {
 }
 
 const Skills = () => {
-    const [selectedCategory, setSelectedCategory] = useState<string>('all')
+    const [selectedCategory, setSelectedCategory] = useState<string>('Frontend Development')
     const [sortBy, setSortBy] = useState<'level' | 'name' | 'years'>('level')
     const [showCertifications, setShowCertifications] = useState(false)
 
@@ -50,12 +49,28 @@ const Skills = () => {
             color: '#3B82F6',
             skills: [
                 {
+                    name: 'AEM',
+                    level: 85,
+                    icon: Code,
+                    years: 1,
+                    description: 'Adobe Experience Manager (AEM) - Building and managing enterprise-level content management solutions, component development with HTL/Sightly, Sling models, OSGi bundles, and AEM workflows. Experience with AEM Sites, Assets, and Forms for creating scalable digital experiences',
+                    lastUsed: '2025'
+                },
+                {
                     name: 'React',
                     level: 95,
                     icon: Code,
                     years: 1,
                     description: 'Building scalable SPAs with hooks, context, and modern patterns',
                     certifications: ['Meta React Certification'],
+                    lastUsed: '2025'
+                },
+                {
+                    name: 'Next.js',
+                    level: 85,
+                    icon: Code,
+                    years: 1,
+                    description: 'Full-stack React framework with SSR and SSG',
                     lastUsed: '2025'
                 },
                 {
@@ -81,30 +96,6 @@ const Skills = () => {
                     years: 1,
                     description: 'Semantic HTML, CSS Grid, Flexbox, and responsive design',
                     lastUsed: '2025'
-                },
-                {
-                    name: 'Next.js',
-                    level: 85,
-                    icon: Code,
-                    years: 1,
-                    description: 'Full-stack React framework with SSR and SSG',
-                    lastUsed: '2025'
-                },
-                {
-                    name: 'AEM',
-                    level: 80,
-                    icon: Code,
-                    years: 1,
-                    description: 'AEM (Adobe Experience Manager) for frontend services',
-                    lastUsed: '2025'
-                },
-                {
-                    name: 'Vue.js',
-                    level: 80,
-                    icon: Code,
-                    years: 1,
-                    description: 'Progressive JavaScript framework with Composition API',
-                    lastUsed: '2025'
                 }
             ]
         },
@@ -127,14 +118,6 @@ const Skills = () => {
                     icon: Server,
                     years: 1,
                     description: 'Fast, unopinionated web framework for Node.js',
-                    lastUsed: '2025'
-                },
-                {
-                    name: 'Golang',
-                    level: 75,
-                    icon: Cpu,
-                    years: 1,
-                    description: 'High-performance systems programming and microservices',
                     lastUsed: '2025'
                 },
                 {
@@ -209,6 +192,14 @@ const Skills = () => {
                     lastUsed: '2025'
                 },
                 {
+                    name: 'Adobe Cloud',
+                    level: 75,
+                    icon: Cloud,
+                    years: 1,
+                    description: 'Adobe Creative Cloud and Experience Cloud services for enterprise solutions, cloud-based workflows, and integrated Adobe ecosystem management',
+                    lastUsed: '2025'
+                },
+                {
                     name: 'CI/CD',
                     level: 72,
                     icon: Zap,
@@ -242,20 +233,6 @@ const Skills = () => {
             ]
         }
     ]
-
-    const getSkillLevelColor = (level: number) => {
-        if (level >= 90) return '#10B981'
-        if (level >= 80) return '#3B82F6'
-        if (level >= 70) return '#F59E0B'
-        return '#EF4444'
-    }
-
-    const getSkillLevelText = (level: number) => {
-        if (level >= 90) return 'Expert'
-        if (level >= 80) return 'Advanced'
-        if (level >= 70) return 'Intermediate'
-        return 'Beginner'
-    }
 
     const filteredAndSortedSkills = useMemo(() => {
         let allSkills = skillCategories.flatMap(cat =>
@@ -373,13 +350,9 @@ const Skills = () => {
                                             </div>
                                         </div>
                                         <div className="skill-level-info">
-                                            <span
-                                                className="skill-level"
-                                                style={{ color: getSkillLevelColor(skill.level) }}
-                                            >
-                                                {getSkillLevelText(skill.level)}
+                                            <span className="skill-level" style={{ color: '#3B82F6' }}>
+                                                Advanced
                                             </span>
-                                            <span className="skill-percentage">{skill.level}%</span>
                                         </div>
                                     </div>
 
