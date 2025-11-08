@@ -45,21 +45,13 @@ const About = () => {
                         viewport={{ once: true }}
                     >
                         <p>
-                            I'm a full-stack software engineer with expertise in modern web development
-                            technologies including React, Node.js, TypeScript, and cloud platforms.
-                            I specialize in building scalable, performant applications with clean architecture
-                            and best practices.
+                            I am a Software Development Engineer specializing in enterprise-grade full-stack development with deep expertise in modern JavaScript ecosystems, Adobe Experience Manager (AEM), and scalable microservices architecture. I architect and deliver production-ready solutions leveraging React.js, Node.js, TypeScript, and enterprise content management platforms.
                         </p>
                         <p>
-                            My technical stack includes frontend frameworks (React, Vue.js), backend
-                            technologies (Node.js, Express, Golang), databases (MongoDB, PostgreSQL),
-                            and DevOps tools (Docker, AWS, CI/CD). I'm passionate about writing
-                            maintainable code and implementing robust testing strategies.
+                            My technical proficiency encompasses frontend engineering (React 18+, Redux Toolkit, RTK Query, React Query, TypeScript), backend development (Node.js, Express.js, RESTful APIs, OSGi Services), enterprise CMS (AEM Sling Models, HTL, Content Fragments, Dispatcher), and database systems (MongoDB, PostgreSQL, JCR). I implement industry-standard DevOps practices utilizing CI/CD pipelines, Docker containerization, and automated deployment workflows.
                         </p>
                         <p>
-                            I follow agile development methodologies and have experience with microservices
-                            architecture, RESTful APIs, and modern deployment practices. My focus is on
-                            creating efficient, scalable solutions that solve real-world problems.
+                            I specialize in performance optimization, system design (HLD/LLD), Role-Based Access Control (RBAC) implementation, component-based architecture, and microservices integration. My approach emphasizes code quality, maintainability, and adherence to SOLID principles, consistently achieving measurable performance improvements and production-grade deliverables.
                         </p>
                     </motion.div>
 
